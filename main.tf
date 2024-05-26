@@ -9,3 +9,7 @@ resource "azurerm_public_ip" "myname" {
   location = azurerm_resource_group.myname.location
   allocation_method = "Static"
 }
+resource "azurerm_resource_group" "myname1" {
+  name = "rg-cloud-new"
+  location = "westus"
+}
